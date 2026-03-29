@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aloy Bot — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Aloy Bot." />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0c10;
+      --panel: #0f1318;
+      --border: #1e2a38;
+      --accent: #00c2ff;
+      --accent2: #ff6a00;
+      --text: #c8d8e8;
+      --muted: #4a6070;
+      --success: #00ff88;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Rajdhani', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,194,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,194,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      width: 100%;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 10px var(--success);
+    }
+
+    .nav-label {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 4px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: 0 0 14px rgba(0,194,255,0.12);
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 32px;
+      position: relative;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.12s forwards;
+    }
+
+    .panel::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--success), transparent);
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-family: 'Share Tech Mono', monospace;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .updated {
+      font-family: 'Share Tech Mono', monospace;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 28px;
+      text-transform: uppercase;
+    }
+
+    .section {
+      margin-bottom: 26px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .section p, .section li {
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 36px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 2px;
+      text-align: center;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.24s forwards;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 30px; }
+      .panel { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="nav">
+      <div class="nav-left">
+        <div class="nav-dot"></div>
+        <span class="nav-label">Aloy Bot — Privacy</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./privacy.html">Privacy</a>
+      </div>
+    </div>
+
+    <main class="panel">
+      <div class="eyebrow">Privacy Policy</div>
+      <h1>Aloy Bot Privacy Policy</h1>
+      <div class="updated">Last updated: March 29, 2026</div>
+
+      <section class="section">
+        <h2>1. Overview</h2>
+        <p>
+          Aloy Bot is a Discord bot developed by Dragic for Fortnite Save the World utility features, including mission and reward tracking.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>2. Data Collection</h2>
+        <p>
+          Aloy Bot is not designed to collect or sell personal user data for advertising or profiling purposes.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>3. Epic Authentication</h2>
+        <p>
+          If Epic account authentication is used, Aloy Bot may temporarily process the authentication data required to complete login and maintain access needed for the bot’s features.
+        </p>
+        <ul>
+          <li>Access is used only for the bot’s stated functionality.</li>
+          <li>Authentication data is not used for unrelated tracking or resale.</li>
+          <li>Only the minimum required handling should be performed for operation of the service.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>4. Stored Information</h2>
+        <p>
+          Aloy Bot may store limited technical or configuration data necessary for bot operation, such as server-related settings, feature preferences, or temporary session data. It does not intentionally store private message content or unrelated personal information beyond what is required for the service to function.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>5. Third-Party Services</h2>
+        <p>
+          Aloy Bot may interact with Epic Games services and Discord platform systems in order to deliver its features. Use of those platforms is also subject to their own terms and privacy policies.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>6. Contact</h2>
+        <p>
+          For questions about this privacy policy, contact the developer through the official Aloy Bot support channel or listed Discord contact.
+        </p>
+      </section>
+    </main>
+
+    <footer>© 2026 Dragic — Aloy Bot — All rights reserved</footer>
+
+  </div>
+</body>
+</html>
